@@ -7,6 +7,8 @@ from spacy import displacy
 nlp = spacy.load('en_core_web_sm')
 with open("data/preprocessed/train/sentences.txt", encoding="utf8") as file:
     train_sentences = file.read()
+    train_sentences = train_sentences.replace('\n',' ')
+print(train_sentences)
 nlp_data = nlp(train_sentences)
 
 
@@ -24,11 +26,11 @@ num_sent_words = num_words/len([sentence for sentence in nlp_data.sents])       
 num_length = sum([len(word) for word in word_frequencies.keys()])/num_types     #Sum of word characters divided by number of words
 
 #RESULTS
-# print("# of tokens", num_tokens,
-#       "\n# of words", num_words,
-#       "\n# of types", num_types,
-#       "\n# of words / sentence", num_sent_words,
-#       "\navg length of words", num_length)
+print("# of tokens", num_tokens,
+      "\n# of words", num_words,
+      "\n# of types", num_types,
+      "\n# of words / sentence", num_sent_words,
+      "\navg length of words", num_length)
 
 
 """ Word Classes """
@@ -66,8 +68,8 @@ for tag in sorted(word_classes, key=word_classes.get, reverse=True):        #Go 
 # print(all_word_freq, "\n")
 
 #RESULTS
-# for POS in w_class_summary:
-#     print(*POS)
+for POS in w_class_summary:
+    print(*POS)
 
 """ N-Grams """
 token_bgram = Counter()
@@ -88,9 +90,9 @@ for sentence in nlp_data.sents:
         uni_pos_tgram.update([sentence[word].pos_+" "+sentence[word+1].pos_+" "+sentence[word+2].pos_])
 
 #Results
-# print("Token bigrams\n",token_bgram,"\nToken trigrams\n",token_tgram,
-#       "\nFine-grained POS bigrams\n",fg_pos_bgram,"\nFine-grained POS trigrams\n",fg_pos_tgram,
-#       "\nUniversal POS bigrams\n",uni_pos_bgram,"\nUniversal POS trigrams\n",uni_pos_tgram)
+print("Token bigrams\n",token_bgram,"\nToken trigrams\n",token_tgram,
+      "\nFine-grained POS bigrams\n",fg_pos_bgram,"\nFine-grained POS trigrams\n",fg_pos_tgram,
+      "\nUniversal POS bigrams\n",uni_pos_bgram,"\nUniversal POS trigrams\n",uni_pos_tgram)
 
 """ Lemmatization """
 all_lemma_dict = {}
@@ -115,8 +117,8 @@ for inflection in all_lemma_dict['fall'] :
             break
 
 #Results
-# print(all_lemma_dict)
-# print(fall_lemma_dict)
+print(all_lemma_dict)
+print(fall_lemma_dict)
 
 """Named Entity Recognition"""
 entity_labels = Counter()
@@ -126,8 +128,8 @@ for entity in nlp_data.ents :   #count every entity
 # print(entity_labels)
 
 #Results
-# print(len(entity_labels.keys()))
-# print(num_ner)
+print(len(entity_labels.keys()))
+print(num_ner)
 
 five_sentences = ""
 k = 0
