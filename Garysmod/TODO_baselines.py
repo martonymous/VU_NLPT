@@ -26,6 +26,7 @@ def majority_baseline(train_sentences, train_labels, testinput, testlabels):
     #Training
     train_df = pd.DataFrame(zip(train_tokens,t_labels),columns=["Train Token","Train Label"])
     major_class = train_df["Train Label"].value_counts().index[0]
+    pred_classes = [element for element in train_df["Train Label"].value_counts().index]
 
     #Testing
     test_tokens = []
@@ -34,10 +35,11 @@ def majority_baseline(train_sentences, train_labels, testinput, testlabels):
     gold_labels = []
     for sent in testlabels:
         for label in sent.rstrip('\n').split(' '): gold_labels.append(label)
+
     pred_labels = [major_class for n in range(len(test_tokens))]
 
     #Results
-    conf_m = confusion_matrix(gold_labels, pred_labels)
+    conf_m = confusion_matrix(gold_labels, pred_labels,labels=pred_classes)
     accuracy = (conf_m[0][0]+conf_m[1][1])/conf_m.sum()
     return accuracy, conf_m
 
@@ -68,7 +70,7 @@ def random_baseline(train_sentences, train_labels, testinput, testlabels):
     accuracy = []
     for n in range(100):
         pred_labels = [rng.choice(pred_classes, 1) for n in range(len(test_tokens))]
-        conf_m = confusion_matrix(gold_labels, pred_labels)
+        conf_m = confusion_matrix(gold_labels, pred_labels,labels=pred_classes)
         accuracy.append((conf_m[0][0]+conf_m[1][1])/conf_m.sum())
     accuracy = np.mean(accuracy)
     return accuracy, conf_m
@@ -94,11 +96,12 @@ def freq_baseline(train_sentences, train_labels, testinput, testlabels, threshol
     gold_labels = []
     for sent in testlabels:
         for label in sent.rstrip('\n').split(' '): gold_labels.append(label)
+    pred_classes_og = pred_classes
     if flip : pred_classes.reverse()
     pred_labels = [pred_classes[0] if word_frequency(test_tokens[n], 'en', wordlist='best', minimum=0.0)>(threshold/100000) else pred_classes[1] for n in range(len(test_tokens))]
 
     #Results
-    conf_m = confusion_matrix(gold_labels, pred_labels)
+    conf_m = confusion_matrix(gold_labels, pred_labels,labels=pred_classes_og)
     accuracy = (conf_m[0][0]+conf_m[1][1])/conf_m.sum()
     return accuracy, conf_m
 
@@ -123,11 +126,12 @@ def length_baseline(train_sentences, train_labels, testinput, testlabels, thresh
     gold_labels = []
     for sent in testlabels:
         for label in sent.rstrip('\n').split(' '): gold_labels.append(label)
+    pred_classes_og = pred_classes
     if flip : pred_classes.reverse()
     pred_labels = [pred_classes[0] if len(test_tokens[n])>threshold else pred_classes[1] for n in range(len(test_tokens))]
 
     #Results
-    conf_m = confusion_matrix(gold_labels, pred_labels)
+    conf_m = confusion_matrix(gold_labels, pred_labels,labels=pred_classes_og)
     accuracy = (conf_m[0][0]+conf_m[1][1])/conf_m.sum()
     return accuracy, conf_m
 
@@ -174,6 +178,8 @@ if __name__ == '__main__':
     print("test rand", test_random_accuracy)
     print("test freq", test_freq_accuracy)
     print("test len", test_length_accuracy)
+
+    #ORDER IS 'N' 'C' !!!! POSITIVE IS N HERE
 
     #region filewrite
     a_file = open("baseline predictions/dev_major.txt", "w")
