@@ -57,7 +57,7 @@ def evaluate(model, loss_fn, data_iterator, metrics, num_steps):
     # compute mean of all metrics in summary
     metrics_mean = {metric:np.mean([x[metric] for x in summ]) for metric in summ[0]} 
     metrics_string = " ; ".join("{}: {:05.3f}".format(k, v) for k, v in metrics_mean.items())
-    logging.info("- Eval metrics : " + metrics_string)
+    logging.info("- Eval metrics    : " + metrics_string)
     return metrics_mean
 
 
@@ -82,7 +82,7 @@ def evaluate_and_output(model, loss_fn, data_iterator, metrics, num_steps, id2wo
     summ = []
 
     # compute metrics over the dataset
-    with open(outfile, "w") as f:
+    with open(outfile, "w", encoding='windows-1252') as f:
         for _ in range(num_steps):
             # fetch the next evaluation batch
             data_batch, labels_batch = next(data_iterator)
@@ -126,7 +126,7 @@ def evaluate_and_output(model, loss_fn, data_iterator, metrics, num_steps, id2wo
     # compute mean of all metrics in summary
     metrics_mean = {metric: np.mean([x[metric] for x in summ]) for metric in summ[0]}
     metrics_string = " ; ".join("{}: {:05.3f}".format(k, v) for k, v in metrics_mean.items())
-    logging.info("- Eval metrics : " + metrics_string)
+    logging.info("- Eval metrics :    " + metrics_string)
     return metrics_mean
 
 if __name__ == '__main__':
@@ -176,6 +176,7 @@ if __name__ == '__main__':
 
     # Evaluate
     num_steps = (params.test_size + 1) // params.batch_size
+
     # MY ADJUSTMENTS
     # reverse the vocab and tag dictionary to be able to map back from ids to words and tags
     id2word = {v: k for k, v in data_loader.vocab.items()}
