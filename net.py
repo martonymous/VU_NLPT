@@ -142,8 +142,51 @@ def accuracy(outputs, labels):
     return np.sum(outputs == labels)/float(np.sum(mask))
 
 
+def precision(outputs, labels):
+    labels = labels.ravel()
+    mask = (labels >= 0)        # removes padding
+    outputs = np.argmax(outputs, axis=1)
+
+    # calculate true positives and false positives
+    tp = np.sum(np.logical_and(outputs == 1, labels == 1))
+    fp = np.sum(np.logical_and(outputs == 1, labels == 0))
+
+    if (tp+fp) != 0:
+        return tp/(tp+fp)
+    else:
+        return np.nan
+
+
+def recall(outputs, labels):
+    labels = labels.ravel()
+    mask = (labels >= 0)        # removes padding
+    outputs = np.argmax(outputs, axis=1)
+
+    # calculate true positives and false negatives
+    tp = np.sum(np.logical_and(outputs == 1, labels == 1))
+    fn = np.sum(np.logical_and(outputs == 0, labels == 1))
+
+    if (tp+fn) != 0:
+        return tp/(tp+fn)
+    else:
+        return np.nan
+
+
+def f1(outputs, labels):
+    rec = recall(outputs, labels)
+    prec = precision(outputs, labels)
+
+    if prec == np.nan or rec == np.nan or (prec+rec) == 0:
+        return np.nan
+    else:
+        return 2*((prec*rec)/(prec+rec))
+
+
 # maintain all metrics required in this dictionary- these are used in the training and evaluation loops
 metrics = {
-    'accuracy': accuracy,
-    # could add more metrics such as accuracy for each token type
+    'accuracy':     accuracy,
+    'precision':    precision,
+    'recall':       recall,
+    'F1-score':     f1,
+# could add more metrics such as accuracy for each token type
 }
