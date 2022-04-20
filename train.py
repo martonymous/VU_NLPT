@@ -83,7 +83,7 @@ def train(model, optimizer, loss_fn, data_iterator, metrics, params, num_steps):
                                      for x in summ]) for metric in summ[0]}
     metrics_string = " ; ".join("{}: {:05.3f}".format(k, v)
                                 for k, v in metrics_mean.items())
-    logging.info("- Train metrics: " + metrics_string)
+    logging.info("- Train metrics:    " + metrics_string)
 
 
 def train_and_evaluate(model, train_data, val_data, optimizer, loss_fn, metrics, params, model_dir, restore_file=None):
@@ -169,6 +169,8 @@ if __name__ == '__main__':
     torch.manual_seed(230)
     if params.cuda:
         torch.cuda.manual_seed(230)
+        # Use GPU
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     # Set the logger
     utils.set_logger(os.path.join(args.model_dir, 'train.log'))
@@ -189,7 +191,9 @@ if __name__ == '__main__':
     logging.info("- done.")
 
     # Define the model and optimizer
+    print(f"cuda:  {device}")
     model = net.Net(params).cuda() if params.cuda else net.Net(params)
+    model.to(device=device)
     optimizer = optim.Adam(model.parameters(), lr=params.learning_rate)
 
     # fetch loss function and metrics
