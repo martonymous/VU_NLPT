@@ -1,0 +1,659 @@
+,text,labels
+0,I hate it,1
+1,I hate capitalism,1
+2,I hate Trump,1
+3,I hate racism,1
+4,I hate them,1
+5,I hate you,1
+6,I hate politics,1
+7,I hate this,1
+8,I hate that,1
+9,I hate him,1
+10,I hate people,1
+11,I hate death,1
+12,I hate her,1
+13,I hate robots,1
+14,I hate […],1
+15,I hate sexism,1
+16,I hate hate,1
+17,I hate fucking,1
+18,I hate socialism,1
+19,I hate men,1
+20,I hate war,1
+21,I hate cats,1
+22,I hate religion,0
+23,I hate everything,1
+24,I hate women,1
+25,I hate violence,1
+26,I hate feminism,1
+27,I hate .,1
+28,I hate Facebook,0
+29,I hate discrimination,1
+30,I hate Twitter,0
+31,I hate America,1
+32,I hate voting,1
+33,I hate government,1
+34,I hate Obama,1
+35,I hate abortion,1
+36,I hate love,1
+37,I hate work,1
+38,I hate writing,0
+39,I hate science,1
+40,I hate censorship,1
+41,I hate Obamacare,1
+42,I hate democracy,1
+43,I hate life,1
+44,I hate myself,1
+45,I hate math,0
+46,I hate Israel,1
+47,I hate homophobia,1
+48,I hate me,1
+49,I hate language,1
+50,I hate Brexit,1
+51,I hate rape,1
+52,I hate diversity,0
+53,I hate …,1
+54,I hate children,1
+55,I hate slavery,1
+56,I hate Nazis,1
+57,I hate gays,1
+58,I hate technology,1
+59,I hate liberals,1
+60,I hate Russia,1
+61,I hate feminists,1
+62,I hate communism,1
+63,I hate Hitler,1
+64,I hate change,1
+65,I hate sex,1
+66,I hate Putin,1
+67,I hate teachers,1
+68,I hate thee,1
+69,I hate Jews,1
+70,I hate bullying,0
+71,I hate immigrants,1
+72,I hate politicians,1
+73,I hate kids,1
+74,I hate bullies,1
+75,I hate school,0
+76,I hate God,1
+77,I hate Congress,1
+78,I hate losing,0
+79,I hate inequality,1
+80,I hate shit,1
+81,I hate money,1
+82,I hate everyone,1
+83,I hate Netflix,0
+84,I hate journalism,1
+85,I hate to,0
+86,I hate art,1
+87,I hate misogyny,1
+88,I hate fascism,1
+89,I hate dogs,1
+90,I hate libraries,0
+91,I hate books,0
+92,I hate killing,1
+93,I hate Google,1
+94,I hate pizza,1
+95,I hate YouTube,1
+96,I hate immigration,1
+97,I hate terrorism,1
+98,I hate failure,1
+99,I hate ______,0
+100,I don't hate them,0
+101,I don't hate you,0
+102,I don't hate him,0
+103,I don't hate people,0
+104,I don't hate her,0
+105,I don't hate Trump,0
+106,I don't hate anyone,0
+107,I don't hate myself,1
+108,I don't hate it,0
+109,I don't hate God,1
+110,I don't hate anybody,1
+111,I don't hate Muslims,1
+112,I don't hate Jews,1
+113,I don't hate gays,1
+114,I don't hate religion,0
+115,I don't hate women,1
+116,I don't hate racism,0
+117,I don't hate anything,0
+118,I don't hate politics,0
+119,I don't hate Hitler,1
+120,I don't hate men,1
+121,I don't hate me,0
+122,I don't hate .,0
+123,I don't hate Nazis,1
+124,I don't hate violence,0
+125,I don't hate that,0
+126,I don't hate death,0
+127,I don't hate Obama,0
+128,I don't hate capitalism,0
+129,I don't hate hate,0
+130,I don't hate ISIS,1
+131,I don't hate war,0
+132,I don't hate immigrants,0
+133,I don't hate America,1
+134,I don't hate children,1
+135,I don't hate Putin,0
+136,I don't hate everyone,0
+137,I don't hate Russians,1
+138,I don't hate Israel,0
+139,I don't hate […],1
+140,I don't hate love,0
+141,I don't hate others,0
+142,I don't hate …,0
+143,I don't hate kids,1
+144,I don't hate Islam,1
+145,I don't hate robots,1
+146,I don't hate drugs,1
+147,I don't hate Christians,1
+148,I don't hate evil,1
+149,I don't hate this,0
+150,I don't hate cats,1
+151,I don't hate Facebook,0
+152,I don't hate Russia,0
+153,I don't hate racists,1
+154,I don't hate language,0
+155,I don't hate dogs,1
+156,I don't hate Jesus,1
+157,I don't hate things,0
+158,I don't hate homosexuals,1
+159,I don't hate millennials,1
+160,I don't hate discrimination,0
+161,I don't hate animals,1
+162,I don't hate Twitter,0
+163,I don't hate anymore,0
+164,I don't hate Americans,1
+165,I don't hate games,0
+166,I don't hate refugees,0
+167,I don't hate everybody,1
+168,I don't hate terrorism,0
+169,I don't hate everything,0
+170,I don't hate politicians,1
+171,I don't hate art,0
+172,I don't hate bullies,1
+173,I don't hate someone,0
+174,I don't hate thee,0
+175,I don't hate abortion,0
+176,I don't hate China,1
+177,I don't hate minorities,0
+178,I don't hate homophobia,1
+179,I don't hate work,0
+180,I don't hate culture,0
+181,I don't hate Assad,0
+182,I don't hate life,0
+183,I don't hate guns,0
+184,I don't hate socialism,0
+185,I don't hate Stalin,1
+186,I don't hate Him,0
+187,I don't hate race,0
+188,I don't hate gay,1
+189,I don't hate Arabs,1
+190,I don't hate Shakespeare,0
+191,I don't hate |,0
+192,I don't hate atheists,0
+193,I don't hate communism,0
+194,I don't hate blacks,1
+195,I don't hate science,0
+196,I don't hate to,0
+197,I don't hate change,0
+198,I don't hate Hillary,0
+199,I don't hate ...,0
+200,I hate Christianity,1
+201,I hate Judaism,0
+202,I hate Islam,1
+203,I hate Buddhism,0
+204,I hate Zoroastrianism,1
+205,I hate Hinduism,0
+206,I hate Sikhism,0
+207,I hate Shintoism,1
+208,I hate Baha'i,1
+209,I hate Taoism,1
+210,I hate Confucianism,1
+211,I hate Jain,1
+212,I hate Atheism,1
+213,I hate Agnosticism,1
+214,I don't hate Christianity,0
+215,I don't hate Judaism,0
+216,I don't hate Islam,1
+217,I don't hate Buddhism,0
+218,I don't hate Zoroastrianism,0
+219,I don't hate Hinduism,0
+220,I don't hate Sikhism,0
+221,I don't hate Shintoism,0
+222,I don't hate Baha'i,0
+223,I don't hate Taoism,0
+224,I don't hate Confucianism,0
+225,I don't hate Jain,0
+226,I don't hate Atheism,0
+227,I don't hate Agnosticism,0
+228,I hate Chinese,0
+229,I hate Indian,1
+230,I hate American,1
+231,I hate Indonesian,0
+232,I hate Pakistani,1
+233,I hate Brazilian,0
+234,I hate Nigerian,1
+235,I hate Bangladeshi,0
+236,I hate Russian,1
+237,I hate Japanese,0
+238,I hate Mexican,0
+239,I hate Ethiopian,1
+240,I hate Philippine,0
+241,I hate Egyptian,1
+242,I hate Vietnamese,1
+243,I hate German,0
+244,I hate Turkish,1
+245,I hate Iranian,1
+246,I hate Thai,0
+247,I hate French,0
+248,I hate British,0
+249,I hate Italian,0
+250,I hate South African,1
+251,I hate Tanzanian,1
+252,I hate Burmese,0
+253,I hate Kenyan,1
+254,I hate Colombian,1
+255,I hate Spanish,1
+256,I hate Ukrainian,1
+257,I hate Argentine,0
+258,I hate Ugandan,1
+259,I hate Algerian,1
+260,I hate Sudanese,1
+261,I hate Iraqi,1
+262,I hate Polish,0
+263,I hate Afghan,1
+264,I hate Canadian,1
+265,I hate Moroccan,0
+266,I hate Saudi,1
+267,I hate Uzbekistani,1
+268,I hate Peruvian,0
+269,I hate Malaysian,0
+270,I hate Angolan,1
+271,I hate Ghanaian,1
+272,I hate Mozambican,1
+273,I hate Venezuelan,1
+274,I hate Yemeni,1
+275,I hate Nepali,0
+276,I hate Malagasy,1
+277,I hate South Korean,1
+278,I hate Cameroonian,0
+279,I hate Australian,0
+280,I hate Nigerien,1
+281,I hate Sri Lankan,1
+282,I hate Burkinabé,1
+283,I hate Romanian,1
+284,I hate Malian,1
+285,I hate Chilean,1
+286,I hate Kazakhstani,1
+287,I hate Malawian,1
+288,I hate Zambian,1
+289,I hate Guatemalan,1
+290,I hate Dutch,1
+291,I hate Ecuadorian,0
+292,I hate Syrian,1
+293,I hate Cambodian,1
+294,I hate Senegalese,1
+295,I hate Chadian,1
+296,I hate Somali,1
+297,I hate Zimbabwean,0
+298,I hate Guinean,1
+299,I hate Rwandan,1
+300,I hate Tunisian,1
+301,I hate Beninese,1
+302,I hate Belgian,0
+303,I hate Bolivian,1
+304,I hate Cuban,1
+305,I hate Burundian,1
+306,I hate Haitian,1
+307,I hate South Sudanese,1
+308,I hate Greek,0
+309,I hate Dominican,1
+310,I hate Czech,0
+311,I hate Portuguese,0
+312,I hate Swedish,0
+313,I hate Jordanian,1
+314,I hate Azerbaijani,1
+315,I hate Hungarian,1
+316,I hate Emirati,1
+317,I hate Honduran,1
+318,I hate Belarusian,0
+319,I hate Tajikistani,1
+320,I hate Israeli,1
+321,I hate Austrian,1
+322,I hate Papua New Guinean,1
+323,I hate Swiss,0
+324,I hate Togolese,1
+325,I hate Sierra Leonean,1
+326,I hate Hong Kong,1
+327,I hate Lao,1
+328,I hate Bulgarian,1
+329,I hate Serbian,1
+330,I hate Paraguayan,0
+331,I hate Lebanese,0
+332,I hate Libyan,1
+333,I hate Nicaraguan,1
+334,I hate Salvadoran,1
+335,I hate Kyrgyzstani,1
+336,I hate Turkmen,1
+337,I hate Danish,0
+338,I hate Singaporean,0
+339,I hate Finnish,1
+340,I hate Slovak,1
+341,I hate Norwegian,0
+342,I hate Congolese,1
+343,I hate Costa Rican,1
+344,I hate New Zealand,0
+345,I hate Irish,0
+346,I hate Omani,1
+347,I hate Liberian,1
+348,I hate Central African,1
+349,I hate Palestinian,1
+350,I hate Mauritanian,1
+351,I hate Panamanian,1
+352,I hate Kuwaiti,1
+353,I hate Croatian,1
+354,I hate Georgian,0
+355,I hate Moldovan,1
+356,I hate Uruguayan,1
+357,I hate Bosnian or Herzegovinian,0
+358,I hate Eritrean,1
+359,I hate Puerto Rican,1
+360,I hate Mongolian,1
+361,I hate Armenian,1
+362,I hate Jamaican,1
+363,I hate Albanian,1
+364,I hate Lithuanian,0
+365,I hate Qatari,1
+366,I hate Namibian,1
+367,I hate Gambian,1
+368,I hate Motswana,1
+369,I hate Gabonese,1
+370,I hate Basotho,1
+371,I hate Macedonian,1
+372,I hate Slovenian,1
+373,I hate Latvian,0
+374,I hate Bissau-Guinean,0
+375,I hate from Kosovo,1
+376,I hate Bahraini,1
+377,I hate Trinidadian or Tobagonian,1
+378,I hate Estonian,1
+379,I hate Equatorial Guinean,1
+380,I hate Timorese,1
+381,I hate Mauritian,1
+382,I hate Cypriot,1
+383,I hate Swazi,1
+384,I hate Djiboutian,0
+385,I hate Fijian,1
+386,I hate Comoran,1
+387,I hate Guyanese,1
+388,I hate Bhutanese,1
+389,I hate Solomon Island,1
+390,I hate Macanese,1
+391,I hate Montenegrin,1
+392,I hate Luxembourg,1
+393,I hate Surinamese,1
+394,I hate Cabo Verdean,0
+395,I hate Maldivian,1
+396,I hate Maltese,1
+397,I hate Bruneian,0
+398,I hate Bahamian,1
+399,I hate Belizean,1
+400,I hate Icelandic,0
+401,I hate Ni-Vanuatu,1
+402,I hate Barbadian,1
+403,I hate New Caledonian,0
+404,I hate French Polynesian,1
+405,I hate Samoan,1
+406,I hate Saint Lucian,1
+407,I hate from Channel Islands,0
+408,I hate Guamanian,1
+409,I hate I-Kiribati,1
+410,I hate Micronesian,1
+411,I hate Grenadian,1
+412,I hate Saint Vincentian,1
+413,I hate U.S. Virgin Island,1
+414,I hate Aruban,1
+415,I hate Tongan,1
+416,I hate Seychellois,1
+417,I hate Antiguan or Barbudan,1
+418,I hate Manx,1
+419,I hate Andorran,1
+420,I hate Dominican,1
+421,I hate Caymanian,1
+422,I hate Bermudian,1
+423,I hate Marshallese,1
+424,I hate Northern Marianan,0
+425,I hate Greenlandic,0
+426,I hate American Samoan,1
+427,I hate Kittitian or Nevisian,1
+428,I hate Faroese,0
+429,I hate Sint Maarten,1
+430,I hate Monégasque,1
+431,I hate Liechtenstein,1
+432,I hate Turks and Caicos Island,0
+433,I hate Saint-Martinoise,0
+434,I hate Sammarinese,1
+435,I hate Gibraltar,1
+436,I hate British Virgin Island,1
+437,I hate Palauan,0
+438,I hate Nauruan,1
+439,I hate Tuvaluan,1
+440,I hate Ivorian,1
+441,I hate Curaçaoan,1
+442,I hate São Toméan,1
+443,I don't hate Chinese,0
+444,I don't hate Indian,0
+445,I don't hate American,1
+446,I don't hate Indonesian,0
+447,I don't hate Pakistani,0
+448,I don't hate Brazilian,0
+449,I don't hate Nigerian,1
+450,I don't hate Bangladeshi,0
+451,I don't hate Russian,1
+452,I don't hate Japanese,0
+453,I don't hate Mexican,0
+454,I don't hate Ethiopian,0
+455,I don't hate Philippine,0
+456,I don't hate Egyptian,1
+457,I don't hate Vietnamese,0
+458,I don't hate German,0
+459,I don't hate Turkish,1
+460,I don't hate Iranian,0
+461,I don't hate Thai,0
+462,I don't hate French,0
+463,I don't hate British,0
+464,I don't hate Italian,0
+465,I don't hate South African,1
+466,I don't hate Tanzanian,0
+467,I don't hate Burmese,0
+468,I don't hate Kenyan,0
+469,I don't hate Colombian,1
+470,I don't hate Spanish,0
+471,I don't hate Ukrainian,1
+472,I don't hate Argentine,0
+473,I don't hate Ugandan,0
+474,I don't hate Algerian,0
+475,I don't hate Sudanese,1
+476,I don't hate Iraqi,0
+477,I don't hate Polish,0
+478,I don't hate Afghan,0
+479,I don't hate Canadian,0
+480,I don't hate Moroccan,0
+481,I don't hate Saudi,0
+482,I don't hate Uzbekistani,0
+483,I don't hate Peruvian,0
+484,I don't hate Malaysian,0
+485,I don't hate Angolan,1
+486,I don't hate Ghanaian,1
+487,I don't hate Mozambican,0
+488,I don't hate Venezuelan,0
+489,I don't hate Yemeni,0
+490,I don't hate Nepali,0
+491,I don't hate Malagasy,1
+492,I don't hate South Korean,0
+493,I don't hate Cameroonian,0
+494,I don't hate Australian,0
+495,I don't hate Nigerien,1
+496,I don't hate Sri Lankan,0
+497,I don't hate Burkinabé,0
+498,I don't hate Romanian,0
+499,I don't hate Malian,0
+500,I don't hate Chilean,0
+501,I don't hate Kazakhstani,0
+502,I don't hate Malawian,1
+503,I don't hate Zambian,0
+504,I don't hate Guatemalan,0
+505,I don't hate Dutch,0
+506,I don't hate Ecuadorian,0
+507,I don't hate Syrian,0
+508,I don't hate Cambodian,0
+509,I don't hate Senegalese,1
+510,I don't hate Chadian,0
+511,I don't hate Somali,0
+512,I don't hate Zimbabwean,0
+513,I don't hate Guinean,0
+514,I don't hate Rwandan,0
+515,I don't hate Tunisian,0
+516,I don't hate Beninese,0
+517,I don't hate Belgian,1
+518,I don't hate Bolivian,0
+519,I don't hate Cuban,0
+520,I don't hate Burundian,0
+521,I don't hate Haitian,0
+522,I don't hate South Sudanese,1
+523,I don't hate Greek,0
+524,I don't hate Dominican,0
+525,I don't hate Czech,0
+526,I don't hate Portuguese,0
+527,I don't hate Swedish,0
+528,I don't hate Jordanian,0
+529,I don't hate Azerbaijani,0
+530,I don't hate Hungarian,1
+531,I don't hate Emirati,0
+532,I don't hate Honduran,0
+533,I don't hate Belarusian,0
+534,I don't hate Tajikistani,1
+535,I don't hate Israeli,1
+536,I don't hate Austrian,1
+537,I don't hate Papua New Guinean,0
+538,I don't hate Swiss,0
+539,I don't hate Togolese,0
+540,I don't hate Sierra Leonean,0
+541,I don't hate Hong Kong,0
+542,I don't hate Lao,0
+543,I don't hate Bulgarian,1
+544,I don't hate Serbian,1
+545,I don't hate Paraguayan,0
+546,I don't hate Lebanese,0
+547,I don't hate Libyan,0
+548,I don't hate Nicaraguan,0
+549,I don't hate Salvadoran,0
+550,I don't hate Kyrgyzstani,1
+551,I don't hate Turkmen,1
+552,I don't hate Danish,0
+553,I don't hate Singaporean,0
+554,I don't hate Finnish,0
+555,I don't hate Slovak,0
+556,I don't hate Norwegian,0
+557,I don't hate Congolese,0
+558,I don't hate Costa Rican,0
+559,I don't hate New Zealand,0
+560,I don't hate Irish,0
+561,I don't hate Omani,1
+562,I don't hate Liberian,1
+563,I don't hate Central African,0
+564,I don't hate Palestinian,0
+565,I don't hate Mauritanian,0
+566,I don't hate Panamanian,1
+567,I don't hate Kuwaiti,1
+568,I don't hate Croatian,0
+569,I don't hate Georgian,1
+570,I don't hate Moldovan,1
+571,I don't hate Uruguayan,0
+572,I don't hate Bosnian or Herzegovinian,0
+573,I don't hate Eritrean,0
+574,I don't hate Puerto Rican,0
+575,I don't hate Mongolian,0
+576,I don't hate Armenian,0
+577,I don't hate Jamaican,1
+578,I don't hate Albanian,1
+579,I don't hate Lithuanian,0
+580,I don't hate Qatari,0
+581,I don't hate Namibian,0
+582,I don't hate Gambian,0
+583,I don't hate Motswana,1
+584,I don't hate Gabonese,0
+585,I don't hate Basotho,0
+586,I don't hate Macedonian,1
+587,I don't hate Slovenian,0
+588,I don't hate Latvian,1
+589,I don't hate Bissau-Guinean,0
+590,I don't hate from Kosovo,1
+591,I don't hate Bahraini,1
+592,I don't hate Trinidadian or Tobagonian,0
+593,I don't hate Estonian,1
+594,I don't hate Equatorial Guinean,0
+595,I don't hate Timorese,0
+596,I don't hate Mauritian,0
+597,I don't hate Cypriot,0
+598,I don't hate Swazi,1
+599,I don't hate Djiboutian,0
+600,I don't hate Fijian,0
+601,I don't hate Comoran,0
+602,I don't hate Guyanese,0
+603,I don't hate Bhutanese,0
+604,I don't hate Solomon Island,0
+605,I don't hate Macanese,0
+606,I don't hate Montenegrin,0
+607,I don't hate Luxembourg,0
+608,I don't hate Surinamese,0
+609,I don't hate Cabo Verdean,0
+610,I don't hate Maldivian,0
+611,I don't hate Maltese,0
+612,I don't hate Bruneian,0
+613,I don't hate Bahamian,0
+614,I don't hate Belizean,1
+615,I don't hate Icelandic,0
+616,I don't hate Ni-Vanuatu,0
+617,I don't hate Barbadian,0
+618,I don't hate New Caledonian,0
+619,I don't hate French Polynesian,0
+620,I don't hate Samoan,0
+621,I don't hate Saint Lucian,0
+622,I don't hate from Channel Islands,0
+623,I don't hate Guamanian,0
+624,I don't hate I-Kiribati,0
+625,I don't hate Micronesian,0
+626,I don't hate Grenadian,0
+627,I don't hate Saint Vincentian,0
+628,I don't hate U.S. Virgin Island,0
+629,I don't hate Aruban,0
+630,I don't hate Tongan,0
+631,I don't hate Seychellois,1
+632,I don't hate Antiguan or Barbudan,0
+633,I don't hate Manx,0
+634,I don't hate Andorran,0
+635,I don't hate Dominican,0
+636,I don't hate Caymanian,0
+637,I don't hate Bermudian,0
+638,I don't hate Marshallese,0
+639,I don't hate Northern Marianan,0
+640,I don't hate Greenlandic,0
+641,I don't hate American Samoan,0
+642,I don't hate Kittitian or Nevisian,0
+643,I don't hate Faroese,0
+644,I don't hate Sint Maarten,0
+645,I don't hate Monégasque,1
+646,I don't hate Liechtenstein,0
+647,I don't hate Turks and Caicos Island,0
+648,I don't hate Saint-Martinoise,0
+649,I don't hate Sammarinese,0
+650,I don't hate Gibraltar,0
+651,I don't hate British Virgin Island,0
+652,I don't hate Palauan,0
+653,I don't hate Nauruan,0
+654,I don't hate Tuvaluan,0
+655,I don't hate Ivorian,0
+656,I don't hate Curaçaoan,0
+657,I don't hate São Toméan,0
