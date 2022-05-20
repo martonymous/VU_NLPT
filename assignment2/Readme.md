@@ -1,3 +1,8 @@
+Authors: Marton Fejer, Gergo Pandurcsek, carol Rameder
+Date: 20-05-2022
+
+Code submission for NLP assignment 2
+
 For part A, we performed all training and evaluation locally (instead of using colab) to speed up training. We run the entire task A from main.py, whereby the current default is load the model from a checkpoint (located in './outputs') and load the data from './data'. All relevant results are printed out when run.
 
 For part B exercise 5 the perturbation is added to the data using add_perturbation.py.
