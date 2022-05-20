@@ -1,22 +1,14 @@
 import pandas as pd
+import numpy as np
+from utils import *
+from tokenization_task import *
 import seaborn as sns
 import matplotlib.pyplot as plt
 import random
 from sklearn.metrics import classification_report
-from simpletransformers.classification import ClassificationModel, ClassificationArgs
-# from pytorch_pretrained_bert import BertTokenizer, BertConfig
-# from pytorch_pretrained_bert import BertAdam, BertForSequenceClassification
-# import torch
 
-random_seed = 1
-random.seed(random_seed)
-
-def load_data():
-    olid_train = pd.read_csv('data/olid-train.csv')
-    olid_test = pd.read_csv('data/olid-test.csv')
-    olid_diagnostic = pd.read_csv('data/olid-subset-diagnostic-tests.csv')
-    return olid_train, olid_test, olid_diagnostic
-
+# ENTER PATH TO LOCAL CHECKPOINT HERE, If BERT-CHECKPOINT IS SAVED, EG:
+BERT_CHECKPOINT = 'outputs/checkpoint-16560-epoch-20'
 
 def random_baseline(train: pd.DataFrame, test: pd.DataFrame):
     train_labels = train['labels'].unique()
@@ -28,13 +20,12 @@ def majority_baseline(train: pd.DataFrame, test: pd.DataFrame):
     pred = [maj_label] * test.shape[0]
     print('\nClassification Report - Majority Baseline\n', classification_report(test['labels'], pred, target_names=['Not Offensive', 'Offensive']))
 
-def load_bert():
-    model_args = ClassificationArgs(num_train_epochs=20, train_batch_size=8, learning_rate=0.000001, overwrite_output_dir=True, dataloader_num_workers=20)
-    bert = ClassificationModel('bert', 'bert-base-cased', args=model_args)
-    return bert
-
 
 if __name__ == '__main__':
+
+    random_seed = 42
+    random.seed(random_seed)
+    np.random.seed(random_seed)
 
     """ Assignment 2A """
 
@@ -46,28 +37,34 @@ if __name__ == '__main__':
     print('\nRelative distribution:\n', train['labels'].value_counts(normalize=True))
     sns.countplot(data=train, x='labels')
 
+    plt.show()
+
     train_sample_off = train[train['labels'] == 1].sample(n=1, random_state=random_seed)
     train_sample_not = train[train['labels'] == 0].sample(n=1, random_state=random_seed)
 
     print('EXAMPLE - Offensive:     ', train_sample_off['text'].values)
     print('EXAMPLE - Not Offensive: ', train_sample_not['text'].values)
 
-    # plt.show()
 
     # run baseline predictions
     random_baseline(train, test)
     majority_baseline(train, test)
 
+    # simple transformers doesn't use this column for trianing anyway
+    train = train.drop('id', axis=1)
+
     # load and retrain bert
-    berty = load_bert()
+    if BERT_CHECKPOINT:
+        berty = load_bert(BERT_CHECKPOINT)
+    else:
+        berty = load_bert()
     berty.train_model(train)
 
     # Evaluate the model
     result, model_outputs, wrong_predictions = berty.eval_model(test)
+
     print(result)
     print(model_outputs)
     print(wrong_predictions)
-    plt.show()
 
-
-
+    run_task4()
